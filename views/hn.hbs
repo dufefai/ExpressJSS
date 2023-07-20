@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #262626;
+        }
+        ul{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            font-family:cursive;
+            font-size: 3em;
+            letter-spacing: 15px;
+            text-shadow: none;
+            animation: animate 1s infinite linear;
+        }
+        h1{
+            position: absolute;
+            top: 101px;
+            left: 52.005%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 1s infinite linear;
+            rotate: 44deg;
+            font-size: 2em;
+        }
+        h2{
+            position: absolute;
+            top: 100px;
+            left: 38.2%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 2s infinite linear;
+            rotate: 134.5deg;
+            font-size: 2em;
+        }
+        h3{
+            position: absolute;
+            top: 103px;
+            left: 50.1%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 3s infinite linear;
+            rotate: 360deg;
+            font-size: 2em;
+        }
+        h4{
+            position: absolute;
+            top: 103px;
+            left: 50.15%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 4s infinite linear;
+            rotate: 270deg;
+            font-size: 2em;
+        }
+        h5{
+            position: absolute;
+            top: 103px;
+            left: 36.2%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 5s infinite linear;
+            rotate: 270deg;
+            font-size: 2em;
+        }
+        h6{
+            position: absolute;
+            top: 312px;
+            left: 50.1%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 6s infinite linear;
+            rotate: 360deg;
+            font-size: 2em;  
+        }
+        a{
+            position: absolute;
+            top: 10%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: animate 1s infinite linear; 
+        }
+        h7{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.00001s infinite linear; 
+            font-size: 2em; 
+        }
+        h8{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.0001s infinite linear; 
+            font-size: 2em; 
+        }
+        h9{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.001s infinite linear; 
+            font-size: 2em; 
+        }
+        h19{
+            position: absolute;
+            top: 35.7%;
+            left: 84.7%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 1s infinite linear; 
+            font-size: 2em; 
+        }
+        h20{
+            position: absolute;
+            top: 35.65%;
+            left: 85.77%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 60s infinite linear; 
+            font-size: 2em; 
+        }
+        h21{
+            position: absolute;
+            top: 35.8%;
+            left: 86.3%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 3600s infinite linear; 
+            font-size: 2em; 
+        }
+        h10{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.01s infinite linear; 
+            font-size: 2em; 
+        }
+        h11{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.1s infinite linear; 
+            font-size: 2em; 
+        }
+        h12{
+            position: absolute;
+            top: 28%;
+            left: 47.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin 0.5s infinite linear; 
+            font-size: 2em; 
+        }
+        h13{
+            position: absolute;
+            top: 48%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 1s infinite linear; 
+            font-size: 2em; 
+        }
+        h14{
+            position: absolute;
+            top: 9%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 0.0001s infinite linear; 
+            font-size: 2em; 
+        }
+        h15{
+            position: absolute;
+            top: 9%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 0.001s infinite linear; 
+            font-size: 2em; 
+        }
+        h16{
+            position: absolute;
+            top: 9%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 0.01s infinite linear; 
+            font-size: 2em; 
+        }
+        h17{
+            position: absolute;
+            top: 9%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 0.1s infinite linear; 
+            font-size: 2em; 
+        }
+        h18{
+            position: absolute;
+            top: 9%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            animation: spin1 1s infinite linear; 
+            font-size: 2em; 
+        }
+      
+
+
+        details {
+            animation: animate 1s infinite linear;
+        }
+        summary + p{
+            animation: animate 2s infinite linear;
+        }
+        summary + p + p{
+            animation: animate 3s infinite linear;
+        }
+        summary + p + p + p{
+            animation: animate 4s infinite linear;
+        }
+        summary + p +p +p +p{
+            animation: animate 5s infinite linear;
+        }
+        @keyframes animate{
+            0%{
+                color: #484848;
+                text-shadow: none;
+            }
+            18%{
+                color: #484848;
+                text-shadow: none;
+            }
+            20%{
+                color: #8c00ff;
+                text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+            }
+            30%{
+                color: #484848;
+                text-shadow: none;
+            }
+            35%{
+                color: #3300ff;
+                text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+            }
+            70%{
+                color: #484848;
+                text-shadow: none;
+            }
+            85%{
+                color: #fff900;
+                text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00; 
+            }
+            90%{
+                color: #484848;
+                text-shadow: none;
+            }
+            100%{
+                color: #484848;
+                text-shadow: none;
+            }
+        }
+        @keyframes spin{
+            0%{
+                color: aquamarine;
+                text-shadow: none;
+                rotate: 0deg;
+            }
+            100%{
+                color: rgb(255, 127, 153);
+                text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+                rotate: 360deg;
+            }
+        }
+        @keyframes spin1{
+            0%{
+                color: aquamarine;
+                text-shadow: none;
+                transform: rotate(0deg);
+            }
+            15%{
+                color: rgb(255, 127, 219);
+                text-shadow: none;
+                
+            }
+            35%{
+                color: rgb(246, 89, 5);
+                text-shadow: none;                
+            }
+            55%{
+                color: rgb(247, 246, 245);
+                text-shadow: none;                
+            }
+            75%{
+                color: rgb(204, 233, 98);
+                text-shadow: none;                
+            }
+            100%{
+                color: rgb(255, 127, 153);
+                text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+                transform: rotate(360deg);
+            }
+        }
+        ul li:nth-child(1){
+            animation-delay: .2s;
+            rotate: 45deg;
+            
+        }
+        ul li:nth-child(2){
+            animation-delay: .4s;
+            rotate: 310deg;
+        }
+        ul li:nth-child(3){
+            animation-delay: .6s;
+            rotate: 270deg;
+        }
+        ul li:nth-child(4){
+            animation-delay: .8s;
+            rotate: 45deg;
+        }
+        ul li:nth-child(5){
+            animation-delay: 1s;
+            rotate: 270deg;
+        }
+
+        .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #333;
+    margin-top: 10%;
+    left: 80%;
+}
+
+/* Định dạng cho số trên đồng hồ */
+.number {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 14px;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>_________</h1>
+    <h2>_________</h2>
+    <h3>_____________</h3>
+    <h4>_____________</h4>
+    <h5>_____________</h5>
+    <h6>_____________</h6>
+    <h7>////////</h7>
+    <h8>////////</h8>
+    <h9>////////</h9>
+    <h10>////////</h10>
+    <h11>////////</h11>
+    <h12>////////</h12>
+    <h13>cec</h13>
+    <h14>___</h14>
+    <h15>___</h15>
+    <h16>___</h16>
+    <h17>___</h17>
+    <h18>___</h18>
+    <h19>_____</h19>
+    <h20>___</h20>
+    <h21>__</h21>
+    
+    <a href="/">demo</a>
+    <ul>
+        <li>D</li>
+        <li>U</li>
+        <li>3</li>
+        <li>5</li>
+        <li>7</li>
+    </ul>
+    <details>
+        <summary>Aduvjp</summary>
+        <p>Vjp1</p>
+        <p>Vjp2</p>
+        <p>Vjp3</p>
+        <p>Vjp4</p>
+    </details>
+    <div class="clock">
+        <p class="number" style=" left: 71%; top: 5%">1</p>
+        <p class="number" style="left: 89%; top: 20%">2</p>
+        <p class="number" style="left: 97%; top: 43%">3</p>
+        <p class="number" style="left: 89%; top: 68%">4</p>
+        <p class="number" style="left: 71%; top: 82%">5</p>
+        <p class="number" style="top: 89%;">6</p>
+        <p class="number" style="left: 27%; top: 82%">7</p>
+        <p class="number" style="left: 11%; top: 68%">8</p>
+        <p class="number" style="left: 4%; top: 43%;">9</p>
+        <p class="number" style="left: 11%; top: 20%">10</p>
+        <p class="number" style="left: 27%; top: 5%">11</p>
+        <p class="number" style="top: -2%;">12</p>
+    </div>
+</body>
+</html>
